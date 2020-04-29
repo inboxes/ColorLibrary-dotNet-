@@ -4,7 +4,9 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             x:Class="ColorLibrary__dotNet_.Views.LibraryPage">
+             x:Class="ColorLibrary__dotNet_.Views.LibraryPage"
+             Title="Library">
+    
     <ContentPage.Resources>
         <!-- Implicit styles -->
         <Style TargetType="{x:Type ListView}">
@@ -15,7 +17,7 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Library Page"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

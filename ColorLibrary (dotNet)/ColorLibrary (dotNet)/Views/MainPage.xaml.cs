@@ -33,6 +33,15 @@ namespace ColorLibrary__dotNet_.Views
                     case (int)MenuItemType.Library:
                         MenuPages.Add(id, new NavigationPage(new LibraryPage()));
                         break;
+                    case (int)MenuItemType.Recent:
+                        MenuPages.Add(id, new NavigationPage(new RecentPage()));
+                        break;
+                    case (int)MenuItemType.Catalogues:
+                        MenuPages.Add(id, new NavigationPage(new CatalogueBrowserPage()));
+                        break;
+                    case (int)MenuItemType.Settings:
+                        MenuPages.Add(id, new NavigationPage(new SettingsPage()));
+                        break;
                     case (int)MenuItemType.About:
                         MenuPages.Add(id, new NavigationPage(new AboutPage()));
                         break;
