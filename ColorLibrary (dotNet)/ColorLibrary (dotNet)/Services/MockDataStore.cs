@@ -14,12 +14,12 @@ namespace ColorLibrary__dotNet_.Services
         {
             items = new List<Item>()
             {
-                new Item { Id = Guid.NewGuid().ToString(), Title = "First item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Second item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Third item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Fourth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Fifth item", Description="This is an item description." },
-                new Item { Id = Guid.NewGuid().ToString(), Title = "Sixth item", Description="This is an item description." }
+                new Item { Title = "First item", Description="This is an item description." },
+                new Item { Title = "Second item", Description="This is an item description." },
+                new Item { Title = "Third item", Description="This is an item description." },
+                new Item { Title = "Fourth item", Description="This is an item description." },
+                new Item { Title = "Fifth item", Description="This is an item description." },
+                new Item { Title = "Sixth item", Description="This is an item description." }
             };
         }
 

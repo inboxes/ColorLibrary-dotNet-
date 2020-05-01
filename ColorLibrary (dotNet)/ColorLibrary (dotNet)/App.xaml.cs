@@ -27,20 +27,23 @@ namespace ColorLibrary__dotNet_
         {
             InitializeComponent();
 
-            DependencyService.Register<MockDataStore>();
+            //DependencyService.Register<MockDataStore>();
             MainPage = new MainPage();
         }
 
         protected override void OnStart()
         {
+            Console.WriteLine("OnStart");
         }
 
         protected override void OnSleep()
         {
+            Console.WriteLine("OnSleep");
         }
 
         protected override void OnResume()
         {
+            Console.WriteLine("OnResume");
         }
     }
 }

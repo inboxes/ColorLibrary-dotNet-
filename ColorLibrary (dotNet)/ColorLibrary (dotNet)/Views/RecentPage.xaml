@@ -21,17 +21,28 @@
     </ContentPage.ToolbarItems>-->
 
     <ContentPage.Content>
-        <ListView x:Name="listView"
+        <StackLayout>
+            <Label Text="{Binding ID}"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Entry Text="{Binding Description}" />
+            <Label Text="{Binding Date}"/>
+
+            <ListView x:Name="ColorList"
               Margin="{StaticResource PageMargin}"
-              ItemSelected="OnListViewItemSelected">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <TextCell Text="{Binding Text}"
-                          TextColor="Black"
-                          Detail="{Binding Date}" />
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
+              ItemSelected="OnListViewItemSelected"
+              ItemsSource="{Binding ColorItem}"
+              BackgroundColor="Black">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Description}"
+                          TextColor="Snow"
+                          Detail="null" />
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        
     </ContentPage.Content>
     
 </ContentPage>
